@@ -117,8 +117,10 @@ body {
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
-  color: white;
+  color: #fff;
   cursor: pointer;
+  transition: 0.3s;
+   margin-right: 15px;
 }
 
 #nav-menu.activo {
