@@ -1,159 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hechiceros | JJK WORLD</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jujutsu Kaisen - Inicio</title>
 
-  <!-- Tipografía igual que en index -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="hechiceros.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Fuentes y estilos -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body>
 
-  <!-- HEADER -->
+<body>
+  <!-- =======================
+       HEADER PRINCIPAL
+  ======================= -->
   <header class="header-principal">
     <div class="contenedor-header">
       <a href="index.html" class="logo">JJK <span>// WORLD</span></a>
 
+      <!-- Botón hamburguesa (visible solo en móvil) -->
       <div class="menu-toggle" id="menu-toggle">
         <i class="fas fa-bars"></i>
       </div>
 
+      <!-- ✅ Agregado el id="nav-menu" -->
       <nav id="nav-menu">
-        <a href="index.html">Inicio</a>
-        <a href="hechiceros.html" class="nav-activo">Hechiceros</a>
+        <a href="index.html" class="nav-activo">Inicio</a>
+        <a href="hechiceros.html">Hechiceros</a>
         <a href="tecnicas.html">Técnicas</a>
         <a href="galeria.html">Galería</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="enciclopedia.html">Contacto</a>
         <a href="unete.html" class="boton-nav">Únete</a>
         <a href="login.html" class="boton-login">Login</a>
       </nav>
     </div>
   </header>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <main class="contenedor-hechiceros">
-    <h1>Hechiceros</h1>
+  <!-- =======================
+       SECCIÓN PRINCIPAL
+  ======================= -->
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-contenido">
+        <h1>DOMINA TU ENERGÍA MALDITA</h1>
+        <p class="subtitulo">
+          Explora el mundo de <span>Jujutsu Kaisen</span> y conviértete en un maestro hechicero.
+        </p>
 
-    <!-- Grado Especial -->
-    <section class="grado">
-      <h2><i class="fa-solid fa-crown"></i> Grado Especial</h2>
-      <div class="grid-hechiceros">
-        <div class="card-hechicero"><img src="images/gojo.jpg" alt="Satoru Gojo"><h3>Satoru Gojo</h3></div>
-        <div class="card-hechicero"><img src="images/geto.jpg" alt="Suguru Geto"><h3>Suguru Geto</h3></div>
-        <div class="card-hechicero"><img src="images/yuki.jpg" alt="Yuki Tsukumo"><h3>Yuki Tsukumo</h3></div>
-        <div class="card-hechicero"><img src="images/yuta.jpg" alt="Yuta Okkotsu"><h3>Yuta Okkotsu</h3></div>
-      </div>
-    </section>
+        <div class="hero-iconos">
+          <div class="icono-item">
+            <i class="fa-solid fa-fire"></i>
+            <span>Poder</span>
+          </div>
+          <div class="icono-item">
+            <i class="fa-solid fa-hand-sparkles"></i>
+            <span>Técnica</span>
+          </div>
+          <div class="icono-item">
+            <i class="fa-solid fa-ranking-star"></i>
+            <span>Grado</span>
+          </div>
+          <div class="icono-item">
+            <i class="fa-solid fa-school"></i>
+            <span>Academia</span>
+          </div>
+        </div>
 
-    <!-- Primer Grado -->
-    <section class="grado">
-      <h2><i class="fa-solid fa-star"></i> Primer Grado</h2>
-      <div class="grid-hechiceros">
-        <div class="card-hechicero"><img src="images/nanami.jpg" alt="Kento Nanami"><h3>Kento Nanami</h3></div>
-        <div class="card-hechicero"><img src="images/yaga.jpg" alt="Masamichi Yaga"><h3>Masamichi Yaga</h3></div>
-        <div class="card-hechicero"><img src="images/todo.jpg" alt="Aoi Todo"><h3>Aoi Todo</h3></div>
-        <div class="card-hechicero"><img src="images/meimei.jpg" alt="Mei Mei"><h3>Mei Mei</h3></div>
-        <div class="card-hechicero"><img src="images/kusakabe.jpg" alt="Atsuya Kusakabe"><h3>Atsuya Kusakabe</h3></div>
-      </div>
-    </section>
-
-    <!-- Cuasi-Primer Grado -->
-    <section class="grado">
-      <h2><i class="fa-solid fa-fire"></i> Cuasi-Primer Grado</h2>
-      <div class="grid-hechiceros">
-        <div class="card-hechicero"><img src="images/inumaki.jpg" alt="Toge Inumaki"><h3>Toge Inumaki</h3></div>
-        <div class="card-hechicero"><img src="images/mechamaru.jpg" alt="Kokichi Muta"><h3>Kokichi Muta (Mechamaru)</h3></div>
-        <div class="card-hechicero"><img src="images/utahime.jpg" alt="Utahime Iori"><h3>Utahime Iori</h3></div>
-        <div class="card-hechicero"><img src="images/noritoshi.jpg" alt="Noritoshi Kamo"><h3>Noritoshi Kamo</h3></div>
-      </div>
-    </section>
-
-    <!-- Segundo Grado -->
-    <section class="grado">
-      <h2><i class="fa-solid fa-bolt"></i> Segundo Grado</h2>
-      <div class="grid-hechiceros">
-        <div class="card-hechicero"><img src="images/megumi.jpg" alt="Megumi Fushiguro"><h3>Megumi Fushiguro</h3></div>
-        <div class="card-hechicero"><img src="images/ino.jpg" alt="Takuma Ino"><h3>Takuma Ino</h3></div>
-        <div class="card-hechicero"><img src="images/itadori.jpg" alt="Yuji Itadori"><h3>Yuji Itadori</h3></div>
-      </div>
-    </section>
-
-    <!-- Cuasi-Segundo Grado -->
-    <section class="grado">
-      <h2><i class="fa-solid fa-dragon"></i> Cuasi-Segundo Grado</h2>
-      <div class="grid-hechiceros">
-        <div class="card-hechicero"><img src="images/momo.jpg" alt="Momo Nishimiya"><h3>Momo Nishimiya</h3></div>
-        <div class="card-hechicero"><img src="images/panda.jpg" alt="Panda"><h3>Panda</h3></div>
-      </div>
-    </section>
-
-    <!-- Tercer Grado -->
-    <section class="grado">
-      <h2><i class="fa-solid fa-circle"></i> Tercer Grado</h2>
-      <div class="grid-hechiceros">
-        <div class="card-hechicero"><img src="images/nobara.jpg" alt="Nobara Kugisaki"><h3>Nobara Kugisaki</h3></div>
-        <div class="card-hechicero"><img src="images/mai.jpg" alt="Mai Zenin"><h3>Mai Zenin</h3></div>
-        <div class="card-hechicero"><img src="images/miwa.jpg" alt="Kasumi Miwa"><h3>Kasumi Miwa</h3></div>
-      </div>
-    </section>
-
-    <!-- Cuarto Grado -->
-    <section class="grado">
-      <h2><i class="fa-solid fa-gem"></i> Cuarto Grado</h2>
-      <div class="grid-hechiceros">
-        <div class="card-hechicero"><img src="images/maki.jpg" alt="Maki Zenin"><h3>Maki Zenin</h3></div>
+        <a href="hechiceros.html" class="btn-pulso">Ver Hechiceros</a>
       </div>
     </section>
   </main>
 
-   <footer class="footer-principal">
-        <div class="footer-grid">
-            <div class="footer-columna">
-                <h3>Síguenos</h3>
-                <div class="redes-sociales">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-columna">
-                <h3>Enlaces de Hechicerías</h3>
-                <a href="hechiceros.html">Hechiceros</a>
-                <a href="tecnicas.html">Técnicas</a>
-                <a href="#">Preguntas Frecuentes (FAQ)</a>
-            </div>
-
-            <div class="footer-columna">
-                <h3>Contacto de la Academia</h3>
-                <p>Escríbenos:</p>
-                <a href="mailto:contacto@jujutsuhigh.com">contacto@jujutsuhigh.com</a>
-            </div>
+  <!-- =======================
+       FOOTER
+  ======================= -->
+  <footer class="footer-principal">
+    <div class="footer-grid">
+      <div class="footer-columna">
+        <h3>Síguenos</h3>
+        <div class="redes-sociales">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
+      </div>
 
-        <div class="footer-copyright">
-            <p>&copy; 2025 Jujutsu Kaisen World. Todos los derechos reservados. - Carlos Puente</p>
-        </div>
-    </footer>
+      <div class="footer-columna">
+        <h3>Enlaces de Hechicerías</h3>
+        <a href="hechiceros.html">Hechiceros</a>
+        <a href="tecnicas.html">Técnicas</a>
+        <a href="#">Preguntas Frecuentes (FAQ)</a>
+      </div>
 
- <script>
-  const menuToggle = document.getElementById("menu-toggle");
-  const navMenu = document.getElementById("nav-menu");
+      <div class="footer-columna">
+        <h3>Contacto de la Academia</h3>
+        <p>Escríbenos:</p>
+        <a href="mailto:contacto@jujutsuhigh.com">contacto@jujutsuhigh.com</a>
+      </div>
+    </div>
 
-  menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("activo");
-  });
+    <div class="footer-copyright">
+      <p>&copy; 2025 Jujutsu Kaisen World. Todos los derechos reservados. - Carlos Puente</p>
+    </div>
+  </footer>
 
-  // Cerrar el menú cuando haces clic en un enlace (importante en móviles)
-  document.querySelectorAll("#nav-menu a").forEach(link => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("activo");
+  <!-- =======================
+       SCRIPT MENÚ RESPONSIVO
+  ======================= -->
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("activo");
     });
-  });
-</script>
 
+    // Cierra el menú al hacer clic en un enlace (útil en móviles)
+    document.querySelectorAll("#nav-menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("activo");
+      });
+    });
+  </script>
 </body>
 </html>
+
