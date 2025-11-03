@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Técnicas - Jujutsu Kaisen World</title>
+  <link rel="stylesheet" href="tecnicas.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header-principal">
+    <div class="contenedor-header">
+      <a href="index.html" class="logo">JJK <span>// WORLD</span></a>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav id="nav-menu">
+        <a href="index.html">Inicio</a>
+        <a href="hechiceros.html">Hechiceros</a>
+        <a href="tecnicas.html" class="nav-activo">Técnicas</a>
+        <a href="galeria.html">Galería</a>
+        <a href="enciclopedia.html">Contacto</a>
+        <a href="unete.html" class="boton-nav">Únete</a>
+        <a href="login.html" class="boton-login">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor-tecnicas">
+    <h1>Técnicas Más Poderosas</h1>
+    <div class="grid-tecnicas">
+      <div class="card-tecnica">
+        <img src="images/vacio.jpg" alt="Infinito">
+        <div class="overlay">
+          <h3>Infinito (Limitless)</h3>
+          <p>La técnica innata de Satoru Gojo que manipula el espacio para crear una distancia infinita entre él y su enemigo.</p>
+        </div>
+      </div>
+
+      <div class="card-tecnica">
+        <img src="images/infinito.jpg" alt="Rojo y Azul">
+        <div class="overlay">
+          <h3>Rojo y Azul</h3>
+          <p>Dos aplicaciones opuestas del Infinito: “Azul” atrae y “Rojo” repele, creando un devastador equilibrio de energía.</p>
+        </div>
+      </div>
+
+    
+
+      <div class="card-tecnica">
+        <img src="images/espiritus.jpg" alt="Manipulación de Espíritus Malditos">
+        <div class="overlay">
+          <h3>Manipulación de Espíritus Malditos</h3>
+          <p>La técnica de Suguru Geto que le permite absorber y controlar espíritus malditos.</p>
+        </div>
+      </div>
+
+      <div class="card-tecnica">
+        <img src="images/Sukuna.jpg" alt="Copia">
+        <div class="overlay">
+          <h3>Desmantelamiento (Dismantle)</h3>
+          <p>La técnica base de Sukuna, que le permite cortar a cualquier objetivo con precisión absoluta, independientemente de su defensa o dureza.</p>
+        </div>
+      </div>
+
+      <div class="card-tecnica">
+        <img src="images/reversa.jpg" alt="Curación por Energía Reversa">
+        <div class="overlay">
+          <h3>Diez Sombras (Ten Shadows Technique)</h3>
+          <p>Técnica heredada de Megumi Fushiguro cuyo usuario puede invocar y manipular diez shikigamis distintos usando su sombra.</p>
+        </div>
+      </div>
+
+      <div class="card-tecnica">
+        <img src="images/discurso.jpg" alt="Discurso Maldito">
+        <div class="overlay">
+          <h3>Discurso Maldito</h3>
+          <p>Técnica de Toge Inumaki; cualquier orden que pronuncie se convierte en un mandato que obliga al objetivo a obedecer, desde paralizar hasta “explosión”.</p>
+        </div>
+      </div>
+
+      <div class="card-tecnica">
+        <img src="images/rika.jpg" alt="Reina de las Maldiciones">
+        <div class="overlay">
+          <h3>Reina de las Maldiciones</h3>
+          <p>Rika Orimoto es una maldición de grado especial, famosa por su abrumadora fuerza y energía maldita ilimitada. Puede almacenar técnicas malditas y herramientas para Yuta Okkotsu, quien la invoca como aliada y como fuente de energía.</p>
+        </div>
+      </div>
+
+      <div class="card-tecnica">
+        <img src="images/choso.jpg" alt="Manipulación de Sangre">
+        <div class="overlay">
+          <h3>Manipulación de Sangre</h3>
+          <p>Técnica heredada del clan Kamo que permite controlar la sangre del usuario tanto dentro como fuera de su cuerpo para atacar o defenderse..</p>
+        </div>
+      </div>
+
+      
+    </div>
+  </main>
+
+   <footer class="footer-principal">
+        <div class="footer-grid">
+            <div class="footer-columna">
+                <h3>Síguenos</h3>
+                <div class="redes-sociales">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Enlaces de Hechicerías</h3>
+                <a href="hechiceros.html">Hechiceros</a>
+                <a href="tecnicas.html">Técnicas</a>
+                <a href="#">Preguntas Frecuentes (FAQ)</a>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Contacto de la Academia</h3>
+                <p>Escríbenos:</p>
+                <a href="mailto:contacto@jujutsuhigh.com">contacto@jujutsuhigh.com</a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2025 Jujutsu Kaisen World. Todos los derechos reservados. - Carlos Puente</p>
+        </div>
+    </footer>
+
+  <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("activo");
+  });
+
+  // Cerrar el menú cuando haces clic en un enlace (importante en móviles)
+  document.querySelectorAll("#nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("activo");
+    });
+  });
+</script>
+</body>
+</html>

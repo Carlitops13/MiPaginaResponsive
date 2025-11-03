@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jujutsu Kaisen - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="header-principal">
+        <div class="contenedor-header">
+            <a href="index.html" class="logo">JJK <span>// WORLD</span></a>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <a href="index.html" class="nav-activo">Inicio</a>
+                <a href="hechiceros.html">Hechiceros</a>
+                <a href="tecnicas.html">Técnicas</a>
+                <a href="galeria.html">Galería</a>
+                <a href="enciclopedia.html">Contacto</a>
+                <a href="unete.html" class="boton-nav">Únete</a>
+                <a href="login.html" class="boton-login">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-contenido">
+                <h1>DOMINA TU ENERGÍA MALDITA</h1>
+                <p class="subtitulo">Explora el mundo de <span>Jujutsu Kaisen</span> y conviértete en un maestro
+                    hechicero.</p>
+                <div class="hero-iconos">
+                    <div class="icono-item">
+                        <i class="fa-solid fa-fire"></i>
+                        <span>Poder</span>
+                    </div>
+                    <div class="icono-item">
+                        <i class="fa-solid fa-hand-sparkles"></i>
+                        <span>Técnica</span>
+                    </div>
+                    <div class="icono-item">
+                        <i class="fa-solid fa-ranking-star"></i>
+                        <span>Grado</span>
+                    </div>
+                    <div class="icono-item">
+                        <i class="fa-solid fa-school"></i>
+                        <span>Academia</span>
+                    </div>
+                </div>
+
+
+                <a href="hechiceros.html" class="btn-pulso">Ver Hechiceros</a>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer-principal">
+        <div class="footer-grid">
+            <div class="footer-columna">
+                <h3>Síguenos</h3>
+                <div class="redes-sociales">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Enlaces de Hechicerías</h3>
+                <a href="hechiceros.html">Hechiceros</a>
+                <a href="tecnicas.html">Técnicas</a>
+                <a href="#">Preguntas Frecuentes (FAQ)</a>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Contacto de la Academia</h3>
+                <p>Escríbenos:</p>
+                <a href="mailto:contacto@jujutsuhigh.com">contacto@jujutsuhigh.com</a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2025 Jujutsu Kaisen World. Todos los derechos reservados. - Carlos Puente</p>
+        </div>
+    </footer>
+    <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("activo");
+  });
+
+  // Cerrar el menú cuando haces clic en un enlace (importante en móviles)
+  document.querySelectorAll("#nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("activo");
+    });
+  });
+</script>
+</body>
+
+
+</html>

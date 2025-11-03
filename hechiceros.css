@@ -1,0 +1,310 @@
+/* =======================
+   ESTILOS GENERALES
+======================= */
+body {
+  background-color: #0a0a0f;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =======================
+   HEADER (IGUAL AL INDEX)
+======================= */
+.header-principal {
+  background-color: rgba(10, 10, 15, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.contenedor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #b70000;
+  transition: 0.3s;
+}
+
+.logo span {
+  color: #ff1a1a;
+}
+
+.logo:hover {
+  color: #ff1a1a;
+  text-shadow: 0 0 15px #ff0000;
+}
+
+.header-principal nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ✅ Corrección: estilo base del nav-menu */
+#nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.header-principal nav a {
+  color: #c0c0c0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s;
+  white-space: nowrap;
+}
+
+.header-principal nav a:hover,
+.header-principal nav a.nav-activo {
+  color: #ff1a1a;
+  text-shadow: 0 0 10px #ff1a1a;
+}
+
+.boton-nav {
+  background-color: #b70000;
+  color: #fff !important;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(183, 0, 0, 0.5);
+}
+
+.boton-nav:hover {
+  background-color: #ff1a1a;
+}
+
+.boton-login {
+  color: #e0e0e0;
+  border: 2px solid #e0e0e0;
+  padding: 6px 16px;
+  border-radius: 6px;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.boton-login:hover {
+  background-color: #fff;
+  color: #0a0a0f;
+}
+
+/* =======================
+   MENÚ HAMBURGUESA
+======================= */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+#nav-menu.activo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  animation: slideDown 0.4s ease forwards;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+  #nav-menu { display: none; width: 100%; }
+  #nav-menu a {
+    padding: 12px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+}
+
+/* =======================
+   SECCIÓN HECHICEROS
+======================= */
+.contenedor-hechiceros {
+  padding: 130px 5% 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+.contenedor-hechiceros h1 {
+  color: #ff1a1a;
+  font-size: 2.5rem;
+  text-shadow: 0 0 15px #b70000;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.grado {
+  margin-bottom: 60px;
+}
+
+.grado h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  text-shadow: 0 0 10px #b70000;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.grado h2 i {
+  color: #b70000;
+  margin-right: 8px;
+}
+
+.grid-hechiceros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center; 
+}
+
+/* ======== CARTAS CON ANIMACIÓN ======== */
+
+/* ✅ Corrección: clase base agregada */
+.card-hechicero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #111;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Efecto hover dinámico */
+.card-hechicero:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+}
+
+/* Efecto de brillo rojo pulsante */
+.card-hechicero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top center, rgba(255, 0, 0, 0.15), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.card-hechicero:hover::before {
+  opacity: 1;
+}
+
+/* Imagen con leve zoom al pasar el mouse */
+.card-hechicero img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.card-hechicero:hover img {
+  transform: scale(1.05);
+}
+
+/* Nombre del hechicero */
+.card-hechicero h3 {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Texto se ilumina ligeramente */
+.card-hechicero:hover h3 {
+  color: #ff1a1a;
+  text-shadow: 0 0 8px #ff1a1a;
+}
+
+/* =======================
+   FOOTER
+======================= */
+.footer-principal {
+  background-color: #0a0a0f;
+  color: #c0c0c0;
+  padding: 60px 5%;
+  border-top: 1px solid #222;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.footer-columna h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #b70000;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-columna a {
+  color: #c0c0c0;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.footer-columna a:hover {
+  color: #b70000;
+  text-shadow: 0 0 10px #b70000;
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 15px;
+}
+
+.redes-sociales a {
+  color: #c0c0c0;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.redes-sociales a:hover {
+  color: #b70000;
+  transform: scale(1.2);
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+}
