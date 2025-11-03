@@ -383,7 +383,7 @@ body {
 /* =======================
    RESPONSIVE GENERAL
 ======================= */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .hero { height: auto; padding: 80px 5%; }
   .hero-contenido h1 { font-size: 2.5rem; }
   .mapa-shibuya { grid-template-columns: 1fr; }
@@ -400,7 +400,7 @@ body {
   width: 100%;
   animation: slideDown 0.4s ease forwards;
 }
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .menu-toggle { display: block; }
   #nav-menu { display: none; width: 100%; }
   #nav-menu a {
@@ -409,7 +409,7 @@ body {
     border-bottom: 1px solid rgba(255,255,255,0.1);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .menu-toggle { display: block; }
   #nav-menu { display: none; width: 100%; }
   #nav-menu a {
